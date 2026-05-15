@@ -1,7 +1,11 @@
 from groq import Groq
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 client = Groq(
-    api_key="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"
+    api_key=os.getenv("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")
 )
 
 def get_chatbot_response(prompt):
